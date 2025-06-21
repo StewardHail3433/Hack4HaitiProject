@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> WEATHER IN HAITI </title> 
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+        crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+    </head>
+    <body>
+        <div class="nav">
+            <a class="active" href="index.html">Home</a>
+            <a href="">Past Weather</a>
+            <a href="" style="float: right;">Account</a>
+        </div>
+        <div>
+            <img src="images/land.jpg" style="width:100%; height: 200px;">
+            <h1 style="position: relative;
+            transform: translate(180%, -135px);
+"> WEATHER IN HAITI </h1>
+        </div>
+        <h3> Pick the region in which you live in: </h3>
+
+        <div id="map"></div>
+
+        <div id="weather-info">
+            <h2 id="location" style="text-align: center;">Place</h2>
+            <div id="list">
+                <ol style="list-style-type: none; list-style-type: none; padding: 0; margin: 0;">
+                    <li id="day0" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather  </p> </li>
+                    <li id="day1" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather </p> </li>
+                    <li id="day2" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather </p> </li>
+                    <li id="day3" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather  </p> </li>
+                    <li id="day4" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather </p> </li>
+                    <li id="day5" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather  </p> </li>
+                    <li id="day6" class="day"> <img src="images/flag.png" class="day-image"> <p class="day-text"> DOTW Weather  </p> </li>
+                </ol>
+            </div>
+        </div>
+        
+
+        <script src="main.js"></script>
+    </body>
+</html>
