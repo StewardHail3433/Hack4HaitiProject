@@ -27,9 +27,9 @@ function onEachFeature(feature, layer) {
             document.getElementById("location").innerHTML = name;
             
             const centroid = turf.centroid(feature);
-            const coords = centroid.geometry.coordinates;
+            const [lng, lat] = centroid.geometry.coordinates;
 
-            setLocation(coords)
+            setLocation({lat: lat, lng: lng})
         });
 
     }
