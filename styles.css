@@ -34,8 +34,14 @@ h1 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
     color: #0156ff;
-    background-color: mediumaquamarine;
-    width: fit-content;
+    text-align: center;
+    text-decoration: underline;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #0156ff;
 }
 
 h3 {
@@ -45,43 +51,86 @@ h3 {
     text-align: center;
 }
 
+h5 {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    color: #0156ff;
+}
+
 #map { 
     height: 400px; 
     width: 600px;  
     margin-left: auto;
-    margin-right: auto; }
-
-#map select {
-    z-index: 1000;
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    padding: 5px;
-    background: white;
-}
-
-.day {
-    display: flex;
-    justify-content: center;  /* centers the pair horizontally */
-    align-items: center;      /* centers them vertically */
-    text-align: center;
-    gap: 30px;
-    padding-bottom: 10px;
+    margin-right: auto;
     border-radius: 20px;
     border-color: black;
     border-style: solid;
+  } 
 
+.day {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    gap: 10px;                  
+    border: 1px solid black;
+    width: 200px;
+    box-sizing: border-box;
+}
+
+#list {
+    display: flex;
+    justify-content: center; 
+}
+
+#list ol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    padding: 0;
+    margin: 0;
 }
 
 .day-image {
     width: 40px; height: 40px; 
     margin: 0;
-    padding: 0;
+    padding: 10px;
 }
 
 .day-text {
     margin: 0;
     padding: 0;
 }
+
+.buttonimage img {
+  width: 40px; height: 40px;
+  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.ol-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#place-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#place-waiting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 
 
